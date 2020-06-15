@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+#temel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#menu,
+#alt {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: #666;
+}
+
+#menu {
+  left: 0;
+  top: 0;
+}
+#alt {
+  left: 0;
+  bottom: 0;
+}
+
+.sayfalar {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 160px);
+  overflow-y: scroll;
+  left: 0;
+  top: 80px;
+  transform: rotateX(90deg);
+  transition: all 0.5s ease;
+}
+
+ul {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+ul li label {
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#sayfa1 {
+  background: #f8f8f8;
+  transform: rotateX(0deg);
+}
+#sayfa2 {
+  background: #eee;
+}
+#sayfa3 {
+  background: #bebebe;
+}
+#sayfa4 {
+  background: #ccc;
+}
+
+h1 {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
